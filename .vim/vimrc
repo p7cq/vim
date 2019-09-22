@@ -1,0 +1,54 @@
+"
+" https://vimhelp.org/quickref.txt.html
+"
+
+execute pathogen#infect()
+
+inoremap jk <ESC>
+let mapleader = ","
+
+filetype plugin indent on
+syntax on
+set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set scrolloff=3
+"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+set list
+set number
+set relativenumber
+set cursorline
+set ttyfast
+set encoding=utf-8
+set clipboard=unnamedplus
+set shell=/bin/bash
+set spell spelllang=en_us
+set showcmd
+set wildmenu
+set wildmode=list:longest,full
+set colorcolumn=80
+set ignorecase
+set smartcase
+
+autocmd FileType markdown let b:sleuth_automatic=0
+autocmd FileType markdown set conceallevel=0
+autocmd FileType markdown normal zR
+
+let g:vim_markdown_formatter=1
+let g:vim_markdown_folding_disabled=1
+
+set guifont:"Noto Sans Mono":h14
+set background=dark
+colorscheme solarized8
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
