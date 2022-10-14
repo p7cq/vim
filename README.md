@@ -67,3 +67,13 @@ Light theme: [Solarized](https://github.com/altercation/vim-colors-solarized):
 ```
     git clone git://github.com/altercation/vim-colors-solarized.git
 ```
+
+### Windows
+
+Start *Command Prompt* as administrator, go to user home directory, create a copy of existing `vimfiles` directory and recreate it as a simlink to `.vim` directory (copied from a Linux machine):
+
+```cmd
+mv vimfiles vimfiles.original
+mklink /D .vim vimfiles
+```
+
